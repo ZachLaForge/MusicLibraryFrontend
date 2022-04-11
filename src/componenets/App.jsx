@@ -3,7 +3,8 @@ import './App.css';
 import axios from 'axios';
 import AddSong from './AddSong/AddSong';
 import MusicViewer from './MusicViewer/MusicViewer';
-import SearchBar from './SearchBar/SearchBar'
+import SearchBar from './SearchBar/SearchBar';
+import Header from './Header/Header';
 
 class App extends Component {
   constructor(props) {
@@ -33,12 +34,9 @@ class App extends Component {
 
   render() { 
       return (
-          <div class = 'center'>
-              <h1>
-                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                    <a class="navbar-brand"><span class="grey">Music</span> <span class="purple">Library</span></a>
-                </nav>
-              </h1>
+          <div className = 'center'>
+              <Header />
+              <SearchBar />
               <MusicViewer songs = {this.state.songs} delete ={this.deleteSong}/>
               <AddSong />
           </div>
