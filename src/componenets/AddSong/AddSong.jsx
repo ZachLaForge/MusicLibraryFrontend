@@ -50,7 +50,13 @@ class AddSong extends Component {
     render() { 
         return (
             <div className="center">
-                <br/><br/>               
+                <br/>
+                 <h1>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                        <a class="navbar-brand"><span class="purple">Add Your</span> <span class="grey">Favourites Here</span></a>
+                    </nav>
+                 </h1>
+                <br/>               
                 <form onSubmit = {this.handleSubmit}>
                     <table>
                                 <th>Title</th>
