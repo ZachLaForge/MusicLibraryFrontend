@@ -34,11 +34,17 @@ class App extends Component {
   render() { 
       return (
           <div class = 'center'>
-              <h1>Music Library</h1>
+              <h1>
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                    <a class="navbar-brand"><span class="grey">Music</span> <span class="purple">Library</span></a>
+                </nav>
+              </h1>
               <MusicViewer songs = {this.state.songs} delete ={this.deleteSong}/>
+              <AddSong />
           </div>
        );
   }
 }
 
 export default App ; 
+
