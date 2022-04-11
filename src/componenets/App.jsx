@@ -25,11 +25,17 @@ class App extends Component {
       });
   }
 
+  async deleteSong(ID){
+    let response = await axios.delete(`http://127.0.0.1:8000/api/music/${ID}/`);
+    console.log(response)
+    window.location.reload();
+}
+
   render() { 
       return (
           <div class = 'center'>
               <h1>Music Library</h1>
-              <MusicViewer songs = {this.state.songs} />
+              <MusicViewer songs = {this.state.songs} delete ={this.deleteSong}/>
           </div>
        );
   }

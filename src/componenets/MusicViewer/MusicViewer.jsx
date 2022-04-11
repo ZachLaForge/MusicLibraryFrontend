@@ -19,6 +19,7 @@ const MusicViewer  = (props) => {
                         <td>{song.album}</td>
                         <td>{song.genre}</td>
                         <td>{song.release_date}</td>
+                        <button onClick = {()=> props.delete(song.id)}>Delete Song</button>
                     </tr>
                 );
             })}
