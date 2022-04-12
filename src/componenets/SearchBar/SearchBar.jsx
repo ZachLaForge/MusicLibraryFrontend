@@ -14,6 +14,7 @@ class SearchBar extends Component {
         this.props.newFilter(event.target.value)
         
     }
+    
 
   
 

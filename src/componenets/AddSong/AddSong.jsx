@@ -53,7 +53,7 @@ class AddSong extends Component {
                 <br/>
                  <h1>
                     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                        <a class="navbar-brand"><span class="purple">Add Your</span> <span class="grey">Favourites Here</span></a>
+                        <a class="navbar-brand"><span class="purple">Add to </span> <span class="grey">This List</span></a>
                     </nav>
                  </h1>
                 <br/>               

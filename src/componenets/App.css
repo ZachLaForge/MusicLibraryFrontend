@@ -3,7 +3,7 @@
     margin-right: auto;
 }
 table {
-    background-color: #E0DBD1;
+    background-color: #e9e3d6;
     color: black;
     opacity: .9;
     border: 1px solid black;
@@ -30,7 +30,7 @@ td {
     font-size: 20px;
 }
 body {
-    background-color: rgb(29, 10, 41);
+    background-color: rgb(25, 16, 41);
     background-size: cover;
     background-attachment:fixed;
     background-repeat: no-repeat;
